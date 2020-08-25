@@ -1,0 +1,709 @@
+@media screen and (max-width: 1024px){
+	body{
+		
+	}
+
+	img{
+		
+	}
+
+	div{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+}
+
+body{
+	font-family: 
+
+}
+
+/*Start of Navbar*/
+
+nav{
+	background: #000;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 13px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a.active, a:hover{
+	background: #01ff70;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 1024px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #85144b;
+		top: 50px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 1;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a{
+		font-size: 20px;
+	}
+
+	a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+/*End of Navbar*/
+
+.banner-area{
+	min-height: 100vh; /*This is to make the next section go below the banner*/
+}
+
+.banner-area .banner-img{
+	background-image: url(../img/smart-watch.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	//z-index: -1;
+}
+
+.banner-body{
+	margin-left: 100px;
+}
+
+.banner-body h2{
+	font-size: 65px;
+	line-height: 1.0;
+}
+
+@media (max-width: 600px){
+	.banner-body{
+		margin-left: 0;
+	}
+	.banner-body h2{
+		font-size: 35px;
+	}
+}
+
+/*Below Banner*/
+
+.below-banner{
+	display: grid;
+	grid-template-columns: 0fr 1fr 1fr;
+	grid-gap: 30px;
+	margin: 150px;
+}
+
+.below-banner h2{
+	font-size: 40px;
+}
+
+
+.second-section-img{
+	margin-left: 150px; 
+}
+
+@media (max-width: 1024px){
+	.below-banner{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 150px 0px;
+	}
+	.second-section-img{
+		margin-left: 0px; 
+	}
+	.below-banner h2{
+	font-size: 25px;
+}
+}
+
+/*End of below banner*/
+
+
+/*Start of Second Banner*/
+
+.second-banner-area{
+	min-height: 100vh; /*This is to make the next section go below the banner*/
+
+}
+
+@media (max-width: 600px){
+
+}
+
+.second-banner-area .second-banner-img{
+	background-image: url(../img/cover15.jpg);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+}
+
+.second-banner{
+	width: 30%; 
+	margin-right: 100px;
+	float: right;
+	margin-top: 15%;
+}
+
+.second-banner h2{
+	font-size: 35px;
+}
+
+@media (max-width: 1024px){
+	.second-banner{
+		width: 100%;
+		float: none;
+		margin: 150px 0px;
+	}
+	.second-banner h2{
+		font-size: 25px;
+	}
+}
+/*End of Second Banner*/
+
+
+/*Start of fourth section*/
+.fourth-section-grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin: 150px; 
+	//min-height: 50vh;
+}
+
+.text-align{
+	text-align: right;
+}
+
+@media (max-width: 1024px){
+	.fourth-section-grid-container{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 150px 10px;
+		
+	}
+
+	.text-align{
+		text-align: left;
+	}
+}
+
+/*End of forth Section*/
+
+
+.clients{
+	display: grid;
+	grid-template-columns:0 1fr 1fr 1fr;
+	//margin: 150px 50px; 
+	min-height: 50vh;
+	text-align: center;
+	padding: 100px 50px;
+}
+
+.client-contents{
+	padding: 200px;
+}
+
+@media (max-width: 1024px){
+	.clients{
+		display: grid;
+		grid-template-columns: 1fr;
+		//margin: 150px 50px; 
+		min-height: 50vh;
+		text-align: left;
+		padding: 100px 50px;
+	}
+}
+
+.footer-begins{
+	padding: 50px;
+}
+
+.footer-begins h1{
+	font-size: 70px;
+}
+
+.footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-hr{
+	margin-top: 100px;
+}
+
+@media (max-width: 1024px){
+	.footer{
+	display: grid;
+	grid-template-columns: 1fr;
+	}
+}
+
+.title-header{
+	padding: 30px 50px;
+}
+
+
+
+/*Start of About page*/
+
+/*Start of page title and img*/
+.page-title{
+	margin-top: -10px;
+}
+
+.page-title-img{
+	background-image: url("../img/cover14.jpg");
+	top: -500px;
+	//position: absolute;
+	width: 100%;
+	min-height: 30vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.page-title .page-title-img h2{
+	margin-top: 80px;
+	margin-left: 30px;
+	font-size: 50px;
+	letter-spacing: 10px;
+}
+
+.page-title .page-title-img p{
+	margin-top: -20px;
+	margin-left: 30px;
+}
+
+@media (max-width: 1024px){
+	.page-title .page-title-img h2{
+		margin-top: 80px;
+		margin-left: 30px;
+		font-size: 30px;
+		letter-spacing: 10px;
+	}
+}
+
+/*End of page title and img*/
+
+
+/*Start of main body section*/
+
+.about-text-bar{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 50px 150px;
+	grid-gap: 20px;
+}
+
+.about-text-bar p{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+@media (max-width: 1024px){
+	.about-text-bar{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 50px 20px;
+	}
+}
+/*End of main body section*/
+
+/*Start of team section*/
+
+.team-section{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 50px 150px;
+	grid-gap: 30px;
+}
+
+.team-section p{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+@media (max-width: 1024px){
+	.team-section{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 50px 0px;
+	}
+}
+
+/*End of team section*/
+
+/*Start of client section*/
+
+.client-review{
+	min-height: 50vh;
+}
+
+.client-review h2{
+	margin: 40px;
+}
+
+.client-review p{
+	margin: 50px 300px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+@media (max-width: 1024px){
+	.client-review p{
+		margin: 50px 0;
+		font-size: 13px;
+		line-height: 20px;
+	}
+}
+
+/*End of client section*/
+
+/*End of About page*/
+
+
+
+/*Begining of Servives page*/
+
+.services-heading h2{
+	margin: 50px 25%;
+}
+
+@media (max-width: 1024px){
+	.services-heading h2{
+		font-size: 21px;
+		margin: 50px 0px;
+	}
+}
+
+.services-we-offer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	margin: 100px 130px;
+}
+
+.services-we-offer p{
+	font-size: 13px;
+}
+
+@media (max-width: 1024px){
+	.services-we-offer{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+		margin: 100px 10px;
+	}
+}
+
+/*End of Services page*/
+
+
+
+
+/*Start of process section*/
+
+.process-section{
+	/*height: 90vh;*/
+	margin: 100px 0;
+
+}
+
+/*.process-section .process-section-img{
+	background-image: url(../img/process-section.jpg);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	//z-index: -1;
+}*/
+
+.process-section-header{
+	margin: 50px 0;
+}
+
+.process-section-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	margin: 150px 150px;
+}
+
+.process-section-bg{
+	background-color: rgba(100, 100, 100, 0.4);
+	padding: 40px;
+}
+
+.process-section-content p{
+	text-align: left;
+	font-size: 12px;
+}
+
+@media (max-width: 1024px){
+	.process-section{
+		/*height: 130vh;*/
+
+	}
+	.process-section .process-section-img{
+		height: 100%;
+	}
+
+	.process-section-header{
+		margin: 30px 0;
+	}
+
+	.process-section-content{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 40px;
+		margin: 30px 20px;
+		width: 90%;
+	}
+
+	.process-section-bg{
+		padding: 10px;
+	}
+}
+
+
+/*End of process section*/
+
+
+/*Start of other services section*/
+.other-services{
+	margin: 20px 0;
+}
+
+.other-services button{
+	margin: 40px 0;
+	padding: 15px 30px;
+}
+
+/*End of other services section*/
+
+
+/*Start of Contact page*/
+.map{
+	margin: 50px 0;
+}
+
+.ctc-info-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 150px;
+	margin: 0 200px 100px 100px;
+}
+
+@media (max-width: 1024px){
+	.ctc-info-form{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 50px;
+		margin: 0 30px 70px 30px;
+	}
+}
+
+.ctc-info-form p{
+	font-size: 13px;
+}
+
+.contact-info h3{
+	letter-spacing: 5px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+input[placeholder]{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+input[type=text]:focus {
+    border: 3px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+textarea[placeholder]{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/*End of Contact page*/
+
+
+
+
+
+/*Start of main footer*/
+
+.main-footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+	padding: 50px 150px;
+}
+
+.main-footer p{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.main-footer h2{
+	font-size: 25px;
+	line-height: 20px;
+}
+
+@media (max-width: 1024px){
+	.main-footer{
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 50px 15px;
+	}
+}
+
+.last-part{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 530px;
+	padding: 10px 150px;
+}
+
+.last-part p{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+@media (max-width: 1024px){
+	.last-part{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		padding: 10px 15px;
+	}
+	.last-part p{
+		font-size: 11px;
+	}
+}
+
+/*End of main footer*/
